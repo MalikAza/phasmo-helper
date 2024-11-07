@@ -1,11 +1,11 @@
-import { PropsWithChildren, StrictMode } from "react"
+import { PropsWithChildren } from "react"
 
-function Provider({children}: PropsWithChildren) {
+function AppProvider({children}: PropsWithChildren) {
   return (
-    <StrictMode>
+    <>
       {children}
-    </StrictMode>
+    </>
   )
 }
 
-export default Provider
+export default AppProvider
