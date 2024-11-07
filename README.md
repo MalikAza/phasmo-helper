@@ -11,6 +11,8 @@ Remove the remote from the template repository.
 ```bash
 git remote remove origin
 ```
+
+Change the **name** and **version** in `package.json`
 ### Index.html
 - ♻️ Corrects `icon`
 - ♻️ Corrects `og:site_name`
