@@ -24,6 +24,3 @@ function AppRouter() {
 }
 
 export default AppRouter
-export {
-  getRoutes,
-}
