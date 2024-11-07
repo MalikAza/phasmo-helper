@@ -2,17 +2,19 @@
 React template for Keeclick *by MalikAza*
 ## Configuration
 ### Environment
-Copy the environment file *and correctly fill it*.
+- Copy the environment file *and correctly fill it*.
 ```bash
 cp .env.example .env
 ```
-
-Remove the remote from the template repository.
+- Remove the remote from the template repository.
 ```bash
 git remote remove origin
 ```
-
-Change the **name** and **version** in `package.json`
+- Change the **name** and **version** in `package.json`.
+- Install dependencies.
+```bash
+yarn
+```
 ### Index.html
 - ♻️ Corrects `icon`
 - ♻️ Corrects `og:site_name`
