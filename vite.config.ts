@@ -22,7 +22,6 @@ export default ({ mode }: { mode: string }) => {
         '@utils': path.resolve(__dirname, './src/utils'),
       },
     },
-    publicDir: path.resolve(__dirname, './src/assets'),
     server: {
       host: process.env.VITE_HOST,
       port: parseInt(process.env.VITE_PORT as string),

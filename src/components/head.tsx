@@ -11,6 +11,7 @@ function Head({ title, image, description, url }: HeadProps) {
       <meta property="og:description" content={description ? description : defaults.description} />
       <meta property="og:url" content={url ? `${defaults.url}${url}` : defaults.url} />
       <title>{title ? title : defaults.title}</title>
+      <meta name="description" content={description ? description : defaults.description} />
     </Helmet>
   )
 }
