@@ -1,4 +1,3 @@
-import logo from '@assets/images/vite.svg'
 import HeadProps from '@ctypes/headProps'
 
 function getDefaultHead(): HeadProps {
@@ -6,9 +5,9 @@ function getDefaultHead(): HeadProps {
   const port = import.meta.env.VITE_PORT
 
   return {
-    title: 'Vite + React + TS',
-    image: logo,
-    description: 'A little description',
+    title: 'Phasmo Helper',
+    image: '',
+    description: '',
     url: `http://${host}${port}`,
   }
 }
