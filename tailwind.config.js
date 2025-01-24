@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['index.html', './src/**/*.{ts,tsx,js,jsx}'],
@@ -11,7 +13,10 @@ export default {
         'journal-dark-yellow': '#cec7a1',
         'journal-brown': '#513933',
         'journal-lines': '#b9af79'
-      }
+      },
+      fontFamily: {
+        lazydog: ['LazyDog', ...defaultTheme.fontFamily.sans],
+      }      
     },
   },
   plugins: [],

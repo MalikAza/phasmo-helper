@@ -23,7 +23,7 @@ const GridBackground = React.forwardRef<
         </defs>
         <rect width="100%" height="100%" fill="url(#grid)" />
       </svg>
-      <div className="relative z-10">
+      <div className="relative z-10 h-full">
         {props.children}
       </div>
     </div>
