@@ -21,7 +21,7 @@ const JournalPage = React.forwardRef<
     {...props}
   >
     {
-      grid && <GridBackground>{props.children}</GridBackground>
+      (grid && <GridBackground>{props.children}</GridBackground>) || props.children
     }
   </section>
 ))
