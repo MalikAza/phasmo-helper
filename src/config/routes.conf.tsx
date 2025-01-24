@@ -1,10 +1,18 @@
+import ErrorPage from "@/app/routes/error.page";
 import HomePage from "@app/routes/home.page";
-import { RouteProps } from "react-router-dom";
+import { RouteObject } from "react-router-dom";
 
-const routes: RouteProps[] = [
+const routes: RouteObject[] = [
   {
     path: '/',
-    element: <HomePage />
+    element: <HomePage />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <></>
+      },
+    ]
   }
 ]
 
