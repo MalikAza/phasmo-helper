@@ -29,8 +29,9 @@ enum GhostType {
 
 interface Ghost {
   id: GhostType
-  name: string,
+  name: string
   evidences: [EvidenceType, EvidenceType, EvidenceType]
+  img: string
 }
 
 export type {
