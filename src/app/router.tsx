@@ -2,9 +2,9 @@ import { createBrowserRouter, RouteObject, RouterProvider } from "react-router-d
 import NotFoundPage from "@app/routes/notFound.page";
 import routes from "@config/routes.conf";
 
-function createAppRouter(routeConfiguration: RouteObject[]) {
+function createAppRouter(routeConfigurations: RouteObject[]) {
   const router = createBrowserRouter([
-    ...routeConfiguration,
+    ...routeConfigurations,
     {
       path: '*',
       element: <NotFoundPage />

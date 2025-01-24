@@ -1,5 +1,5 @@
 import { Evidence, EvidenceState, EvidenceType } from "@/types/evidence.types";
-import { Ghost } from "@/types/ghosts.types";
+import { Ghost, GhostType } from "@/types/ghosts.types";
 import { filterEvidencesByState } from "../evidences/utils.evidences";
 
 function isOneOfGhostEvidencesIsStrikedOut(ghost: Ghost, evidences: Record<EvidenceType, Evidence>): boolean {
@@ -23,6 +23,11 @@ function isGhostPossible(ghost: Ghost, evidences: Record<EvidenceType, Evidence>
   return true
 }
 
+function URLEncodeGhostName(ghostName: GhostType) {
+  return encodeURIComponent(ghostName.toLowerCase())
+}
+
 export {
-  isGhostPossible
+  isGhostPossible,
+  URLEncodeGhostName,
 }
