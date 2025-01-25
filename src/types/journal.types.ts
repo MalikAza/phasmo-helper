@@ -1,8 +1,10 @@
 import { Dispatch } from "react"
 import { Evidence, EvidenceType } from "./evidence.types";
+import { Ghost, GhostType } from "./ghosts.types";
 
 interface JournalState {
   evidences: Record<EvidenceType, Evidence>
+  ghosts: Record<GhostType, Ghost>
 }
 
 enum ACTIONS {

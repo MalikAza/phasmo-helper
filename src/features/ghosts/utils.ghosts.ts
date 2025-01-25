@@ -27,7 +27,21 @@ function URLEncodeGhostName(ghostName: GhostType) {
   return encodeURIComponent(ghostName.toLowerCase())
 }
 
+function URLdecodeGhostName(ghostName: string): GhostType | undefined {
+  try {
+    const decodedName = decodeURIComponent(ghostName).toUpperCase()
+
+    return Object.values(GhostType).find(
+      ghostType => ghostType === decodedName
+    )
+  } catch (error) {
+    console.error('Error decoding ghost name', error)
+    return undefined
+  }
+}
+
 export {
   isGhostPossible,
   URLEncodeGhostName,
+  URLdecodeGhostName
 }

@@ -1,4 +1,4 @@
-import { GHOSTS } from "@/stores/ghosts"
+import initialGhosts from "@/features/ghosts/initial.ghosts"
 import { GhostType } from "@/types/ghosts.types"
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
 }
 
 function LeftPage({ ghostId }: Props) {
-  const ghost = GHOSTS.find(ghost => ghost.id === ghostId)
+  const ghost = ghostId ? initialGhosts[ghostId] : ghostId
 
   if (!ghost) return (<></>)
 

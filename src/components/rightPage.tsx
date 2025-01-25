@@ -1,8 +1,8 @@
-import { GHOSTS } from "@/stores/ghosts"
 import { Separator } from "@components/ui/separator"
 import EvidenceBtn from "./evidence.btn"
 import useJournal from "@/hooks/journal.hook"
 import GhostBtn from "./ghost.btn"
+import initialGhosts from "@/features/ghosts/initial.ghosts"
 
 function RightPage() {
   const { state } = useJournal()
@@ -20,7 +20,7 @@ function RightPage() {
       </ul>
       <Separator className="h-1 rounded-full" />
       <ul className="grid grid-cols-3 gap-y-4 pt-4">
-        {GHOSTS.map((ghost) => (
+        {Object.values(initialGhosts).map((ghost) => (
           <li className="flex items-center justify-center" key={ghost.id}>
             <GhostBtn ghost={ghost} />
           </li>

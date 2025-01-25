@@ -24,8 +24,8 @@ function GhostsRouter() {
   const GhostComponent = ghostComponents[decodedGhostId];
 
   return (
-    <Suspense fallback={<div className="h-full w-full flex items-center justify-center">Loading ghost details...</div>}>
-      {GhostComponent ? <GhostComponent /> : <div className="h-full w-full flex items-center justify-center">Component not found</div>}
+    <Suspense fallback={<div className="h-full w-full flex items-center justify-center font-lazydog">Loading ghost details...</div>}>
+      {GhostComponent ? <GhostComponent /> : <div className="h-full w-full flex items-center justify-center font-lazydog">Component not found</div>}
     </Suspense>
   )
 }

@@ -1,15 +1,27 @@
 import { useParams } from "react-router-dom"
+import GhostTemplate from "../ui/ghost/template.ghost"
 
 function Spirit() {
   const { ghostId } = useParams()
 
-  console.log('Spirit component rendered', { ghostId })
+  const hunts = [
+    '<= 50%'
+  ]
+  const speeds = [
+    '1,7 m/s (base)',
+    '2,8 m/s (accélération maximum)'
+  ]
+  const details = [
+    "L'encens l'empêche de chasser pendant 2min (au lieu de 1min30)"
+  ]
 
   return (
-    <div>
-      <h2>Spirit Details</h2>
-      <p>Ghost ID: {ghostId}</p>
-    </div>
+    <GhostTemplate
+      ghostId={ghostId as string}
+      hunts={hunts}
+      speeds={speeds}
+      details={details}
+    />
   )
 }
 

@@ -26,7 +26,7 @@ import moroi from '@assets/images/ghosts/moroi.webp'
 import deogen from '@assets/images/ghosts/deogen.webp'
 import thaye from '@assets/images/ghosts/thaye.webp'
 
-export const GHOSTS: Ghost[] = [
+const GHOSTS: Ghost[] = [
   {
     id: GhostType.SPIRIT,
     name: 'Esprit',
@@ -268,3 +268,11 @@ export const GHOSTS: Ghost[] = [
     img: thaye,
   },
 ]
+
+const initialGhosts: Record<GhostType, Ghost> = GHOSTS
+  .reduce((acc, ghost) => ({
+    ...acc,
+    [ghost.id]: ghost
+  }), {} as Record<GhostType, Ghost>)
+
+export default initialGhosts
