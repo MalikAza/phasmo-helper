@@ -22,6 +22,7 @@ function GhostsRouter() {
     [GhostType.ONI]: lazy(() => import("@components/ghosts/oni")),
     [GhostType.YOKAI]: lazy(() => import("@components/ghosts/yokai")),
     [GhostType.HANTU]: lazy(() => import("@components/ghosts/hantu")),
+    [GhostType.GORYO]: lazy(() => import("@components/ghosts/goryo")),
   }
 
   const decodedGhostId = ghostId
