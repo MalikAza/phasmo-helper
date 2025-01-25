@@ -11,7 +11,7 @@ type Props = {
   ghostId: string
   hunts: string[]
   speeds: string[]
-  details: string[]
+  details?: string[]
 }
 
 function GhostTemplate({ ghostId, hunts, speeds, details }: Props) {
@@ -25,7 +25,7 @@ function GhostTemplate({ ghostId, hunts, speeds, details }: Props) {
       <GhostEvidences evidences={ghost.evidences} />
       <GhostHunt hunts={hunts} />
       <GhostSpeed speeds={speeds} />
-      <GhostDetails details={details} />
+      {details && <GhostDetails details={details} />}
     </>
   )
 }
