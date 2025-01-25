@@ -29,6 +29,7 @@ function GhostsRouter() {
     [GhostType.RAIJU]: lazy(() => import("@components/ghosts/raiju")),
     [GhostType.OBAKE]: lazy(() => import("@components/ghosts/obake")),
     [GhostType.THE_MIMIC]: lazy(() => import("@components/ghosts/mimic")),
+    [GhostType.MOROI]: lazy(() => import("@components/ghosts/moroi")),
   }
 
   const decodedGhostId = ghostId
