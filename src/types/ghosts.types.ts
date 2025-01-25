@@ -31,6 +31,7 @@ interface Ghost {
   id: GhostType
   name: string
   evidences: [EvidenceType, EvidenceType, EvidenceType]
+  obligatoryEvidence: EvidenceType | null
   img: string
 }
 

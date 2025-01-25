@@ -26,6 +26,15 @@ function RightPage() {
           </li>
         ))}
       </ul>
+      <footer className="absolute right-0 bottom-0 flex flex-row justify-between items-center px-10 w-full">
+        <p className="flex flex-row gap-2 items-center">
+          <span className="h-2 w-2 bg-red-600 rounded-full" />
+          <span>Preuve obligatoire</span>
+        </p>
+        <p className="opacity-25 italic text-sm">
+          24/01/2025
+        </p>
+      </footer>
     </div>
   )
 }

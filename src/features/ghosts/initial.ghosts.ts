@@ -35,6 +35,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.EMF5,
       EvidenceType.SPIRIT_BOX,
     ],
+    obligatoryEvidence: null,
     img: spirit,
   },
   {
@@ -45,6 +46,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.DOTS,
       EvidenceType.SPIRIT_BOX,
     ],
+    obligatoryEvidence: null,
     img: wraith,
   },
   {
@@ -55,6 +57,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.SPIRIT_BOX,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: null,
     img: phantom,
   },
   {
@@ -65,6 +68,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.SPIRIT_BOX,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: null,
     img: poltergeist,
   },
   {
@@ -75,6 +79,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.DOTS,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: null,
     img: banshee,
   },
   {
@@ -85,6 +90,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.TEMP_GLACIALE,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: null,
     img: jinn,
   },
   {
@@ -95,6 +101,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.ORBE,
       EvidenceType.SPIRIT_BOX,
     ],
+    obligatoryEvidence: null,
     img: mare,
   },
   {
@@ -105,6 +112,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.ORBE,
       EvidenceType.TEMP_GLACIALE,
     ],
+    obligatoryEvidence: null,
     img: revenant,
   },
   {
@@ -115,6 +123,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.EMF5,
       EvidenceType.TEMP_GLACIALE,
     ],
+    obligatoryEvidence: null,
     img: shade,
   },
   {
@@ -125,6 +134,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.TEMP_GLACIALE,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: null,
     img: demon,
   },
   {
@@ -135,6 +145,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.DOTS,
       EvidenceType.TEMP_GLACIALE,
     ],
+    obligatoryEvidence: null,
     img: yurei,
   },
   {
@@ -145,6 +156,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.DOTS,
       EvidenceType.TEMP_GLACIALE,
     ],
+    obligatoryEvidence: null,
     img: oni,
   },
   {
@@ -155,6 +167,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.DOTS,
       EvidenceType.SPIRIT_BOX,
     ],
+    obligatoryEvidence: null,
     img: yokai,
   },
   {
@@ -165,6 +178,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.TEMP_GLACIALE,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: EvidenceType.TEMP_GLACIALE,
     img: hantu,
   },
   {
@@ -175,6 +189,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.DOTS,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: EvidenceType.DOTS,
     img: goryo,
   },
   {
@@ -185,6 +200,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.EMF5,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: null,
     img: myling,
   },
   {
@@ -195,6 +211,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.SPIRIT_BOX,
       EvidenceType.TEMP_GLACIALE,
     ],
+    obligatoryEvidence: null,
     img: onryo,
   },
   {
@@ -205,6 +222,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.SPIRIT_BOX,
       EvidenceType.TEMP_GLACIALE,
     ],
+    obligatoryEvidence: null,
     img: the_twins,
   },
   {
@@ -215,6 +233,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.ORBE,
       EvidenceType.DOTS,
     ],
+    obligatoryEvidence: null,
     img: raiju,
   },
   {
@@ -225,6 +244,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.ORBE,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: EvidenceType.UV,
     img: obake,
   },
   {
@@ -235,6 +255,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.TEMP_GLACIALE,
       EvidenceType.UV,
     ],
+    obligatoryEvidence: EvidenceType.ORBE,
     img: the_mimic,
   },
   {
@@ -245,6 +266,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.SPIRIT_BOX,
       EvidenceType.TEMP_GLACIALE,
     ],
+    obligatoryEvidence: EvidenceType.SPIRIT_BOX,
     img: moroi,
   },
   {
@@ -255,6 +277,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.DOTS,
       EvidenceType.SPIRIT_BOX,
     ],
+    obligatoryEvidence: EvidenceType.SPIRIT_BOX,
     img: deogen,
   },
   {
@@ -265,6 +288,7 @@ const GHOSTS: Ghost[] = [
       EvidenceType.ORBE,
       EvidenceType.DOTS,
     ],
+    obligatoryEvidence: null,
     img: thaye,
   },
 ]

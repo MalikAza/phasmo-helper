@@ -22,7 +22,7 @@ function GhostTemplate({ ghostId, hunts, speeds, details }: Props) {
   return (
     <>
       <GhostHeader name={ghost.name} image={ghost.img} />
-      <GhostEvidences evidences={ghost.evidences} />
+      <GhostEvidences evidences={ghost.evidences} obligatoryEvidence={ghost.obligatoryEvidence} />
       <GhostHunt hunts={hunts} />
       <GhostSpeed speeds={speeds} />
       {details && <GhostDetails details={details} />}
