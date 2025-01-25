@@ -18,6 +18,7 @@ interface Evidence {
   id: EvidenceType
   name: string
   state: EvidenceState
+  icon: string
 }
 
 export type {
