@@ -12,6 +12,7 @@ function GhostsRouter() {
     [GhostType.WRAITH]: lazy(() => import("@components/ghosts/wraith")),
     [GhostType.PHANTOM]: lazy(() => import("@components/ghosts/phantom")),
     [GhostType.POLTERGEIST]: lazy(() => import("@components/ghosts/poltergeist")),
+    [GhostType.BANSHEE]: lazy(() => import("@components/ghosts/banshee")),
   }
 
   const decodedGhostId = ghostId
