@@ -14,6 +14,7 @@ function GhostsRouter() {
     [GhostType.POLTERGEIST]: lazy(() => import("@components/ghosts/poltergeist")),
     [GhostType.BANSHEE]: lazy(() => import("@components/ghosts/banshee")),
     [GhostType.JINN]: lazy(() => import("@components/ghosts/jinn")),
+    [GhostType.MARE]: lazy(() => import("@components/ghosts/mare")),
   }
 
   const decodedGhostId = ghostId
