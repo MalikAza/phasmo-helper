@@ -3,12 +3,15 @@ import EvidenceBtn from "./evidence.btn"
 import useJournal from "@/hooks/journal.hook"
 import GhostBtn from "./ghost.btn"
 import initialGhosts from "@/features/ghosts/initial.ghosts"
+import { ScrollArea } from "./ui/scroll-area"
 
 function RightPage() {
   const { state } = useJournal()
 
   return (
-    <div className="text-black p-10 font-lazydog text-2xl flex flex-col h-full overflow-y-auto">
+    <ScrollArea
+      className="text-black p-10 font-lazydog text-2xl flex flex-col h-full overflow-y-auto [&_.scroll-area-scroll-thumb]:!bg-journal-brown"
+    >
       <h3 className="text-4xl pb-4">Preuves</h3>
       <Separator className="h-1 rounded-full" />
       <ul className="grid grid-cols-2 gap-y-2 py-4">
@@ -35,7 +38,7 @@ function RightPage() {
           24/01/2025
         </p>
       </footer>
-    </div>
+    </ScrollArea>
   )
 }
 
