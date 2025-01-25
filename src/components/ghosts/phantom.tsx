@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import GhostTemplate from "../ui/ghost/template.ghost"
 
-function Wraith() {
+function Phantom() {
   const { ghostId } = useParams()
 
   const hunts = [
@@ -12,8 +12,10 @@ function Wraith() {
     '2,8 m/s (accélération maximum)'
   ]
   const details = [
-    "Ne peut pas marcher dans le sel",
-    "Peut se téléporter vers un joueur aléatoirement (EMF 2/5 à l'endroit ciblé)"
+    "Peut choisir de se déplacer vers un joueur aléatoirement (EMF 2 à son arrivée)",
+    "Disparait sur les photos (sauf chasse)",
+    "Clignotement lent (invisible pendant minimum 1s)",
+    "Être en ligne de vue à moins de 10m de l'entité pendant une manifestation ou une chasse, draine la santé de 0,5%/s"
   ]
 
   return (
@@ -26,4 +28,4 @@ function Wraith() {
   )
 }
 
-export default Wraith
+export default Phantom

@@ -10,6 +10,7 @@ function GhostsRouter() {
   const ghostComponents: Record<GhostType, LazyExoticComponent<ComponentType>> = {
     [GhostType.SPIRIT]: lazy(() => import("@components/ghosts/spirit")),
     [GhostType.WRAITH]: lazy(() => import("@components/ghosts/wraith")),
+    [GhostType.PHANTOM]: lazy(() => import("@components/ghosts/phantom")),
   }
 
   const decodedGhostId = ghostId
