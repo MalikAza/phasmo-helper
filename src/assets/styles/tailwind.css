@@ -566,6 +566,10 @@ video {
   font-display: swap;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
