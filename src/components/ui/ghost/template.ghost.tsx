@@ -7,6 +7,8 @@ import GhostHunt from "./ghost.hunt"
 import GhostSpeed from "./ghost.speed"
 import GhostDetails from "./ghost.details"
 import { ScrollArea } from "../scroll-area"
+import { PropsWithChildren } from "react"
+import { cn } from "@/lib/utils"
 
 type Props = {
   ghostId: string
@@ -20,14 +22,30 @@ function GhostTemplate({ ghostId, hunts, speeds, details }: Props) {
 
   const ghost = state.ghosts[URLdecodeGhostName(ghostId as string) as GhostType]
 
+  const Container = ({children}: PropsWithChildren): JSX.Element => {
+      const classes = "text-black p-10 font-lazydog text-2xl flex flex-col h-full"
+      return (
+        <>
+          <ScrollArea
+            className={cn(classes, "[&_.scroll-area-scroll-thumb]:!bg-journal-brown hidden lg:block")}
+          >
+            {children}
+          </ScrollArea>
+          <div className={cn(classes, 'block lg:hidden')}>
+            {children}
+          </div>
+        </>
+      )
+    }
+
   return (
-    <ScrollArea className="[&_.scroll-area-scroll-thumb]:bg-journal-brown p-10">
+    <Container>
       <GhostHeader name={ghost.name} image={ghost.img} />
       <GhostEvidences evidences={ghost.evidences} obligatoryEvidence={ghost.obligatoryEvidence} />
       <GhostHunt hunts={hunts} />
       <GhostSpeed speeds={speeds} />
       {details && <GhostDetails details={details} />}
-    </ScrollArea>
+    </Container>
   )
 }
 

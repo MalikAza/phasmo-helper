@@ -16,7 +16,7 @@ const JournalPage = React.forwardRef<
   JournalPageProps
 >(({className, grid, ...props}, ref) => (
   <section
-    className={cn('bg-radial from-journal-yellow to-journal-dark-yellow h-full w-1/2', className)}
+    className={cn('bg-radial from-journal-yellow to-journal-dark-yellow h-fit lg:h-full w-full lg:w-1/2', className)}
     ref={ref}
     {...props}
   >
