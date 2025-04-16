@@ -27,12 +27,19 @@ enum GhostType {
   THAYE = 'THAYE',
 }
 
+enum GhostState {
+  NOT_SELECTED = 'NOT_SELECTED',
+  SELECTED = 'SELECTED',
+  STRIKED_OUT = 'STRIKED_OUT',
+}
+
 interface Ghost {
   id: GhostType
   name: string
   evidences: [EvidenceType, EvidenceType, EvidenceType]
   obligatoryEvidence: EvidenceType | null
   img: string
+  state: GhostState
 }
 
 export type {
@@ -40,5 +47,6 @@ export type {
 }
 
 export {
-  GhostType
+  GhostType,
+  GhostState
 }

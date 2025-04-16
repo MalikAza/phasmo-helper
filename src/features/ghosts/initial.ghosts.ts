@@ -1,5 +1,5 @@
 import { EvidenceType } from "@/types/evidence.types";
-import { Ghost, GhostType } from "@/types/ghosts.types";
+import { Ghost, GhostState, GhostType } from "@/types/ghosts.types";
 
 import spirit from '@assets/images/ghosts/spirit.webp'
 import wraith from '@assets/images/ghosts/wraith.webp'
@@ -37,6 +37,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: spirit,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.WRAITH,
@@ -48,6 +49,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: wraith,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.PHANTOM,
@@ -59,6 +61,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: phantom,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.POLTERGEIST,
@@ -70,6 +73,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: poltergeist,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.BANSHEE,
@@ -81,6 +85,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: banshee,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.JINN,
@@ -92,6 +97,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: jinn,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.MARE,
@@ -103,6 +109,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: mare,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.REVENANT,
@@ -114,6 +121,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: revenant,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.SHADE,
@@ -125,6 +133,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: shade,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.DEMON,
@@ -136,6 +145,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: demon,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.YUREI,
@@ -147,6 +157,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: yurei,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.ONI,
@@ -158,6 +169,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: oni,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.YOKAI,
@@ -169,6 +181,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: yokai,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.HANTU,
@@ -180,6 +193,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: EvidenceType.TEMP_GLACIALE,
     img: hantu,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.GORYO,
@@ -191,6 +205,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: EvidenceType.DOTS,
     img: goryo,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.MYLING,
@@ -202,6 +217,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: myling,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.ONRYO,
@@ -213,6 +229,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: onryo,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.THE_TWINS,
@@ -224,6 +241,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: the_twins,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.RAIJU,
@@ -235,6 +253,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: raiju,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.OBAKE,
@@ -246,6 +265,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: EvidenceType.UV,
     img: obake,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.THE_MIMIC,
@@ -257,6 +277,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: EvidenceType.ORBE,
     img: the_mimic,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.MOROI,
@@ -268,6 +289,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: EvidenceType.SPIRIT_BOX,
     img: moroi,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.DEOGEN,
@@ -279,6 +301,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: EvidenceType.SPIRIT_BOX,
     img: deogen,
+    state: GhostState.NOT_SELECTED
   },
   {
     id: GhostType.THAYE,
@@ -290,6 +313,7 @@ const GHOSTS: Ghost[] = [
     ],
     obligatoryEvidence: null,
     img: thaye,
+    state: GhostState.NOT_SELECTED
   },
 ]
 

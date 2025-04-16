@@ -2,7 +2,6 @@ import { Separator } from "@components/ui/separator"
 import EvidenceBtn from "./evidence.btn"
 import useJournal from "@/hooks/journal.hook"
 import GhostBtn from "./ghost.btn"
-import initialGhosts from "@/features/ghosts/initial.ghosts"
 import { ScrollArea } from "./ui/scroll-area"
 import { PropsWithChildren } from "react"
 import { cn } from "@/lib/utils"
@@ -39,7 +38,7 @@ function RightPage({}: PropsWithChildren) {
       </ul>
       <Separator className="h-1 rounded-full" />
       <ul className="grid grid-cols-2 lg:grid-cols-3 gap-y-4 pt-4">
-        {Object.values(initialGhosts).map((ghost) => (
+        {Object.values(state.ghosts).map((ghost) => (
           <li className="flex items-center justify-center" key={ghost.id}>
             <GhostBtn ghost={ghost} />
           </li>

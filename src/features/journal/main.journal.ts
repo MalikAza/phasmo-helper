@@ -1,4 +1,5 @@
 import { EvidenceState } from "@/types/evidence.types";
+import { GhostState } from "@/types/ghosts.types";
 import { ACTIONS, ActionType, JournalState } from "@/types/journal.types";
 
 function journalReducer(state: JournalState, action: ActionType): JournalState {
@@ -32,6 +33,35 @@ function journalReducer(state: JournalState, action: ActionType): JournalState {
         }
       }
   
+    case ACTIONS.CLICK_GHOST:
+      const ghost = state.ghosts[action.payload]
+      let newGhostState: GhostState
+
+      switch (ghost.state) {
+        case GhostState.NOT_SELECTED:
+          newGhostState = GhostState.SELECTED
+          break
+
+        case GhostState.SELECTED:
+          newGhostState = GhostState.STRIKED_OUT
+          break
+
+        case GhostState.STRIKED_OUT:
+          newGhostState = GhostState.NOT_SELECTED
+          break
+      }
+
+      return {
+        ...state,
+        ghosts: {
+          ...state.ghosts,
+          [action.payload]: {
+            ...ghost,
+            state: newGhostState
+          }
+        }
+      }
+
     default:
       return state
   }
