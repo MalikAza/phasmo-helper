@@ -1,6 +1,7 @@
 import { EvidenceState } from "@/types/evidence.types";
 import { GhostState } from "@/types/ghosts.types";
 import { ACTIONS, ActionType, JournalState } from "@/types/journal.types";
+import initialJournalState from "./initial.journal";
 
 function journalReducer(state: JournalState, action: ActionType): JournalState {
   switch (action.type) {
@@ -61,6 +62,9 @@ function journalReducer(state: JournalState, action: ActionType): JournalState {
           }
         }
       }
+
+    case ACTIONS.RESET:
+      return initialJournalState
 
     default:
       return state

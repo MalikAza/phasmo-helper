@@ -5,9 +5,17 @@ import GhostBtn from "./ghost.btn"
 import { ScrollArea } from "./ui/scroll-area"
 import { PropsWithChildren } from "react"
 import { cn } from "@/lib/utils"
+import { useNavigate } from "react-router-dom"
+import { ACTIONS } from "@/types/journal.types"
 
 function RightPage({}: PropsWithChildren) {
-  const { state } = useJournal()
+  const { state, dispatch } = useJournal()
+  const navigate = useNavigate()
+
+  const handleReset = () => {
+    dispatch({ type: ACTIONS.RESET })
+    navigate('/')
+  }
 
   const Container = ({children}: PropsWithChildren): JSX.Element => {
     const classes = "text-black p-10 font-lazydog text-2xl flex flex-col h-full"
@@ -27,7 +35,10 @@ function RightPage({}: PropsWithChildren) {
 
   return (
     <Container>
-      <h3 className="text-4xl pb-4">Preuves</h3>
+      <div className="flex flex-row justify-between items-center">
+        <h3 className="text-4xl pb-4">Preuves</h3>
+        <button onClick={handleReset}>Reset</button>
+      </div>
       <Separator className="h-1 rounded-full" />
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-y-2 py-4">
         {Object.values(state.evidences).map((evidence) => (

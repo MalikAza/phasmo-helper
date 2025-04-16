@@ -11,7 +11,9 @@ const routes: RouteObject[] = [
     children: [
       {
         index: true,
-        element: <></>
+        element: <p className="text-black p-10 font-lazydog h-full w-full flex justify-center items-center">
+          <span>Clic droit ou pression longue sur le nom du fantôme pour avoir plus d'informations.</span>
+        </p>
       },
       {
         path: '/:ghostId',

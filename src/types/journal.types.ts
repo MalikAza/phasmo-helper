@@ -9,12 +9,14 @@ interface JournalState {
 
 enum ACTIONS {
   CLICK_EVIDENCE = 'CLICK_EVIDENCE',
-  CLICK_GHOST = 'CLICK_GHOST'
+  CLICK_GHOST = 'CLICK_GHOST',
+  RESET = 'RESET'
 }
 
 type ActionType = 
   | { type: ACTIONS.CLICK_EVIDENCE; payload: EvidenceType }
   | { type: ACTIONS.CLICK_GHOST; payload: GhostType }
+  | { type: ACTIONS.RESET }
 
 interface JournalContextType {
   state: JournalState,
