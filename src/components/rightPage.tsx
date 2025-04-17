@@ -50,7 +50,7 @@ function RightPage({}: PropsWithChildren) {
       <Separator className="h-1 rounded-full" />
       <ul className="grid grid-cols-2 lg:grid-cols-3 gap-y-4 pt-4">
         {Object.values(state.ghosts).map((ghost) => (
-          <li className="flex items-center justify-center" key={ghost.id}>
+          <li className="flex items-center justify-center select-none" key={ghost.id}>
             <GhostBtn ghost={ghost} />
           </li>
         ))}
@@ -61,7 +61,7 @@ function RightPage({}: PropsWithChildren) {
           <span>Preuve obligatoire</span>
         </p>
         <p className="opacity-25 italic text-sm">
-          24/01/2025
+          17/04/2025
         </p>
       </footer>
     </Container>
