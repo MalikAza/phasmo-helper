@@ -19,7 +19,7 @@ function EvidenceBtn({ evidence }: Props) {
       onClick={handleOnClick}
       className="flex items-center flex-row gap-2 relative ml-4"
     >
-      <span className="h-8 w-8 border-black border-2 inline-block">
+      <span className="h-8 w-8 border-black border-2 inline-block rounded-sm">
         {evidence.state === EvidenceState.SELECTED ? 'X' : ''}
       </span>
       <span>{evidence.name}</span>
