@@ -34,7 +34,7 @@ function GhostBtn({ ghost }: Props) {
             className={cn(
               "absolute top-1/2 -translate-y-1/2",
               ghost.state === GhostState.SELECTED ? "h-[3.4rem] w-[9rem] left-1/2 -translate-x-1/2 border-2 border-black rounded-[75%]" : '',
-              ghost.state === GhostState.STRIKED_OUT ? "-left-[5%] w-[110%] h-1 bg-black rounded-full" : '',
+              ghost.state === GhostState.STRIKED_OUT ? "-left-[15%] w-[130%] h-1 bg-black rounded-full" : '',
               ghost.state === GhostState.NOT_SELECTED ? 'hidden' : 'block'
             )}
           />
