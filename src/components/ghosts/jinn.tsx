@@ -4,8 +4,10 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Jinn() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 50%'
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 50
+    }
   ]
   const speeds = [
     '1,7 m/s (base)',

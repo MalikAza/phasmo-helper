@@ -4,9 +4,15 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Mare() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 60% (si entité dans la lumière)',
-    "<= 40% (si entité dans l'obscurité"
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 40,
+      comment: "(si entité dans la lumière)"
+    },
+    {
+      percentage: 60,
+      comment: "(si entité dans l'obscurité)"
+    },
   ]
   const speeds = [
     '1,7 m/s (base)',

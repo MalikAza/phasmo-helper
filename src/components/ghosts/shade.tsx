@@ -4,8 +4,10 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Shade() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 35%'
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 35
+    }
   ]
   const speeds = [
     '1,7 m/s (base)',

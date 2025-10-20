@@ -12,7 +12,10 @@ import { cn } from "@/lib/utils"
 
 type Props = {
   ghostId: string
-  hunts: string[]
+  hunts: {
+    percentage: number
+    comment?: string
+  }[]
   speeds: string[]
   details?: string[]
 }

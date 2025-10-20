@@ -4,9 +4,14 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Onryo() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 60%',
-    '<= 100% (pouvoir)'
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 60
+    },
+    {
+      percentage: 100,
+      comment: "(pouvoir)"
+    }
   ]
   const speeds = [
     '1,7 m/s (base)',

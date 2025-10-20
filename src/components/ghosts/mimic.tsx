@@ -4,9 +4,14 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Mimic() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 50%',
-    'Peut copier une entité'
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 50
+    },
+    {
+      percentage: 100,
+      comment: "(Peut copier une entité)"
+    }
   ]
   const speeds = [
     '1,7 m/s (base)',

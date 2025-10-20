@@ -4,9 +4,14 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Raiju() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 50%',
-    "<= 65% (proche d'un appareil électronique actif)"
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 50
+    },
+    {
+      percentage: 65,
+      comment: "(proche d'un appareil électronique actif)"
+    }
   ]
   const speeds = [
     '1,7 m/s (base)',

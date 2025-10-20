@@ -4,8 +4,10 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Moroi() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 50%'
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 50
+    }
   ]
   const speeds = [
     '1,5 m/s (base avec santé >50%)',

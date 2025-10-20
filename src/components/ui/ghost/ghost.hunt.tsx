@@ -1,15 +1,34 @@
+import { Badge } from "../badge"
+import { Progress } from "../progress"
+
 type Props = {
-  hunts: string[]
+  hunts: {
+    percentage: number,
+    comment?: string
+  }[]
 }
+
+const lifeColors = [
+  "blue-600",
+  "red-600",
+  "green-600",
+  "yellow-600"
+]
 
 function GhostHunt({ hunts }: Props) {
   return (
     <div className="flex flex-col gap-y-2">
       <h4 className="text-2xl">Chasse:</h4>
-      <ul className="flex flex-col list-disc text-base font-sans">
+      <ul className="flex flex-col list-disc text-base font-sans gap-1">
         {
           hunts.map((hunt, index) => (
-            <li key={index} className="ml-10">{hunt}</li>
+            <li key={index} className="flex flex-row gap-2 ml-10 items-center">
+              <Badge variant={'outline'} className={`!text-white bg-${lifeColors.at(index)} bg-opacity-80 !text-xs`}>
+                <span className="w-[3ch] text-right">{`${hunt.percentage}%`}</span>
+              </Badge>
+              <Progress value={hunt.percentage} max={100} className={`w-1/3 !bg-black/20 [&_div]:!bg-${lifeColors.at(index)}`} />
+              <span className="text-sm">{hunt.comment}</span>
+            </li>
           ))
         }
       </ul>

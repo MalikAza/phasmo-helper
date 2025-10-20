@@ -4,10 +4,19 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Thaye() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 75% (âge initial)',
-    '<= 15% (âge +10)',
-    '-6% / âge ajouté'
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 75,
+      comment: "(âge initial)"
+    },
+    {
+      percentage: 15,
+      comment: "(âge +10)"
+    },
+    {
+      percentage: 0,
+      comment: '-6% / âge ajouté'
+    }
   ]
   const speeds = [
     '2,75 m/s (âge initial)',

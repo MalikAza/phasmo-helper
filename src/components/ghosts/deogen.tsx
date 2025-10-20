@@ -4,8 +4,10 @@ import GhostTemplate from "../ui/ghost/template.ghost"
 function Deogen() {
   const { ghostId } = useParams()
 
-  const hunts = [
-    '<= 40%'
+  const hunts: {percentage: number, comment?: string}[] = [
+    {
+      percentage: 40,
+    },
   ]
   const speeds = [
     '4 m/s (+6m)',
