@@ -44,10 +44,12 @@ function GhostTemplate({ ghostId, hunts, speeds, details }: Props) {
   return (
     <Container>
       <GhostHeader name={ghost.name} image={ghost.img} />
-      <GhostEvidences evidences={ghost.evidences} obligatoryEvidence={ghost.obligatoryEvidence} />
-      <GhostHunt hunts={hunts} />
-      <GhostSpeed speeds={speeds} />
-      {details && <GhostDetails details={details} />}
+      <div className="flex flex-col gap-4">
+        <GhostEvidences evidences={ghost.evidences} obligatoryEvidence={ghost.obligatoryEvidence} />
+        <GhostHunt hunts={hunts} />
+        <GhostSpeed speeds={speeds} />
+        {details && <GhostDetails details={details} />}
+      </div>
     </Container>
   )
 }
