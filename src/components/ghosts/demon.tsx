@@ -18,10 +18,11 @@ function Demon() {
     '2,8 m/s (accélération maximum)'
   ]
   const details = [
-    "Délai minimum entre 2 chasses (sans encens) : 20s",
+    "Délai minimum entre 2 chasses (sans encens) : 20s (au lieu de 25s)",
     "Délai entre deux chasses avec un encens 1min",
     "Plus grande portée du crucifix (x1,5)",
-    "Chasse plus souvent"
+    "Chasse plus souvent",
+    "L'encens l'empêche de chasser pendant 60s (au lieu de 90s)"
   ]
 
   return (
