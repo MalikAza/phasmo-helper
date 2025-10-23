@@ -21,7 +21,6 @@ function Banshee() {
     "Sa cible perds 15% de santé lors d'un événement chantant lors d'un contact (au lieu de 10% normalement)",
     "Réalise plus souvent des événement chantant",
     "33% de chances d'effectuer un cri spécial (micro parabolique)",
-    "Ne peut pas changer de salle favorite (sauf patte de singe)"
   ]
 
   return (
