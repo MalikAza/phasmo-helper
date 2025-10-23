@@ -21,7 +21,7 @@ function Hantu() {
   const details = [
     "Ne peut pas allumer le disjonteur",
     "+50% de chances d'éteindre le disjonteur",
-    "Si disjoncteur éteint : souffle glacial dans toute la maison durant la chasse",
+    "Si disjoncteur éteint : souffle glacial sur lui dans toute la maison durant la chasse",
   ]
 
   return (
