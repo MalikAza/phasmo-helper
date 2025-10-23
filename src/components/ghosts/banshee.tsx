@@ -17,8 +17,8 @@ function Banshee() {
   const details = [
     "Cible un joueur aléatoirement au début de la partie (N'en change qu'à sa mort ou si il quitte la partie)",
     "Chasse sa cible uniquement (si dans la maison, sinon chasse normalement)",
-    "67% de chances de se déplacer vers sa cible (ne fonctionne pas à travers les étages, hormis Point Hope & Bleasdale)",
-    "Sa cible perds 15% de santé lors d'un événement chantant lors d'un contact",
+    "67% de chances de se déplacer vers sa cible (ne fonctionne pas à travers les étages, hormis Point Hope ou si l’entité est dans la cave ou le grenier)",
+    "Sa cible perds 15% de santé lors d'un événement chantant lors d'un contact (au lieu de 10% normalement)",
     "Réalise plus souvent des événement chantant",
     "33% de chances d'effectuer un cri spécial (micro parabolique)",
     "Ne peut pas changer de salle favorite (sauf patte de singe)"
