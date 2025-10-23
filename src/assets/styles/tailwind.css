@@ -810,6 +810,10 @@ video {
   width: 100vw;
 }
 
+.w-\[4ch\] {
+  width: 4ch;
+}
+
 .min-w-\[8rem\] {
   min-width: 8rem;
 }

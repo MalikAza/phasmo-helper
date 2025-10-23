@@ -24,7 +24,7 @@ function GhostHunt({ hunts }: Props) {
           hunts.map((hunt, index) => (
             <li key={index} className="flex flex-row gap-2 ml-10 items-center">
               <Badge variant={'outline'} className="!text-white bg-opacity-80 !text-xs" style={{backgroundColor: lifeColors.at(index)}}>
-                <span className="w-[3ch] text-right">{`${hunt.percentage}%`}</span>
+                <span className="w-[4ch] text-right">{`${hunt.percentage}%`}</span>
               </Badge>
               <Progress value={hunt.percentage} max={100} className={`w-1/3 !bg-black/20`} bgColor={lifeColors.at(index)} />
               <span className="text-sm">{hunt.comment}</span>
