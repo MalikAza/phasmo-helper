@@ -15,7 +15,8 @@ function Myling() {
   ]
   const details = [
     "Bruits de pas audibles qu'à moins de 12m (au lieu de 20m)",
-    "Sons paranormaux plus fréquent au micro parabolique"
+    "Sons paranormaux plus fréquent au micro parabolique",
+    "Peut produire un son paranormal au bout de 64s (contre 80s de CD pour les autres)"
   ]
 
   return (
