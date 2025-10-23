@@ -11,7 +11,7 @@ function Jinn() {
   ]
   const speeds = [
     '1,7 m/s (base)',
-    '2,5 m/s (disjonteur allumé + joueur visible à 3m+)',
+    '2,5 m/s (disjonteur allumé + joueur visible à plus de 2,5m)',
     '2,8 m/s (accélération maximum)'
   ]
   const details = [
