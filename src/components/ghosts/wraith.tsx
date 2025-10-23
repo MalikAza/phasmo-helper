@@ -15,7 +15,7 @@ function Wraith() {
   ]
   const details = [
     "Ne peut pas marcher dans le sel",
-    "Peut se téléporter vers un joueur aléatoirement (EMF 2/5 à l'endroit ciblé)"
+    "Peut se téléporter vers un joueur aléatoirement (EMF 2~5 à l'endroit ciblé)"
   ]
 
   return (
