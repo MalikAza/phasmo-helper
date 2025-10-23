@@ -29,7 +29,6 @@ function Thaye() {
     "Si il ne vieillit pas, il réessaie après 30s",
     "2x plus de chances d'interraction à l'âge initial",
     "Plus il vieillit, moins il est actif",
-    "Plus de chances d'interagir avec le livre et les D.O.T.S."
   ]
 
   return (
