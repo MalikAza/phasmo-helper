@@ -15,8 +15,10 @@ function Obake() {
   ]
   const details = [
     "25% de chances de ne pas laisser d'empreintes",
-    "25% de chances de laisser une empreinte à 6 doigts (5 sur le clavier et 2 sur l'interrupteur)",
-    "Change de skin durant une chasse"
+    "16,7% de chances de laisser une empreinte à 6 doigts (5 sur le clavier et 2 sur l'interrupteur)",
+    "Change de skin durant une chasse",
+    "Ne peut pas changer de genre",
+    "Les joueurs morts ne peuvent pas voir le changement"
   ]
 
   return (
