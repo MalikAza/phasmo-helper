@@ -61,7 +61,7 @@ function RightPage({}: PropsWithChildren) {
           <span>Preuve obligatoire</span>
         </p>
         <p className="opacity-25 italic text-sm">
-          20/10/2025
+          23/10/2025
         </p>
       </footer>
     </Container>
