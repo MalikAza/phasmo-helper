@@ -25,7 +25,7 @@ function GhostEvidences({ evidences, obligatoryEvidence }: Props) {
 
             return (
               <li className="flex flex-row items-center" key={evidence.id}>
-                <TooltipProvider>
+                <TooltipProvider delayDuration={0}>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <div className="relative">
