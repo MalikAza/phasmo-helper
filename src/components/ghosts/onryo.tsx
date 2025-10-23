@@ -19,7 +19,9 @@ function Onryo() {
   ]
   const details = [
     "Tente une chasse après avoir souffle 3 flammes",
-    "Les flammes l'empêche de chasser (rayon de 4m)"
+    "Les flammes l'empêche de chasser (rayon de 4m)",
+    "Peut éteindre la même bougie en moins de 20s",
+    "Ne peut pas allumer les bougies",
   ]
 
   return (
