@@ -15,9 +15,10 @@ function Poltergeist() {
   ]
   const details = [
     "Lance les objets 2x plus fort",
-    "Pendant une chasse, 100% de chances de lancer un objet toutes les 1/2s",
-    "Peut lancer plusieurs objets (EMF 2 à sa position, EMF 2/3 par objets jetés)",
-    "Pic de 0 à 10 sans chasse ou événment"
+    "Pendant une chasse, 100% de chances de lancer un objet toutes les 0.5s (au lieux de 50% pour les autres)",
+    "Peut lancer plusieurs objets (EMF 2 à sa position, EMF 2~3 par objets jetés)",
+    "Pic de 0 à 10 sans chasse ou événment",
+    "Lors de son pouvoir, le joueur perds 2% de santé par objets lancés"
   ]
 
   return (
