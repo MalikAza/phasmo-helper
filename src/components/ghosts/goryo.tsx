@@ -16,7 +16,8 @@ function Goryo() {
   const details = [
     "Ne peut pas changer de pièce favorite (sauf patte de singe)",
     "Se déplace à coup de 3m maximal (donc souvent dans sa pièce favorite)",
-    "D.O.T.S visible uniquement à la caméra et personne dans sa pièce"
+    "D.O.T.S visible uniquement à la caméra et personne dans sa pièce",
+    "Chance accrue de faire les D.O.T.S",
   ]
 
   return (
