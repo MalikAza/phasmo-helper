@@ -790,8 +790,8 @@ video {
   width: 1px;
 }
 
-.w-\[3ch\] {
-  width: 3ch;
+.w-\[4ch\] {
+  width: 4ch;
 }
 
 .w-\[90vw\] {
@@ -808,10 +808,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[4ch\] {
-  width: 4ch;
 }
 
 .min-w-\[8rem\] {
